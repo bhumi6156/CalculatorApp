@@ -143,3 +143,20 @@ footer {
     margin-top: 5%;
 }
 
+@media only screen and (max-width: 1025px) {
+    .calculator {
+      width: 60%;
+      height: 70%;
+    }
+
+    .modelDetails {
+        width: 30%;
+    }
+
+    .solarPanel {
+        width: 30%;
+        height: 60%;
+    }
+
+  }
+
