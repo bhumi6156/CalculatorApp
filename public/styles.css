@@ -1,0 +1,164 @@
+html { font-size: 1em; }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Audiowide', cursive;
+
+}
+
+/* Calcy Outer Screen */
+.container {
+
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg,#106EE8, #7BE77E, #8D6EC8);
+    background-size: 400% 300%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+/* Calculator Body */
+.calculator {
+    background-image: 
+    repeating-linear-gradient(
+      45deg,
+      #333333,
+      #333333 10px,
+      #343434 10px,
+      #343434 20px
+    );
+    border-radius: 15px;
+    box-shadow: 2px 8px 5px 5px #515E63,
+    0 5px 5px 2px #B2B1B9;
+    padding: 20px;
+    height: 75%;
+    width: 30%;
+}
+
+/* Calculator Heading */
+.headerContainer {
+    padding: 5px;
+    margin-top: 5px;
+    height: 20%;
+    width: 100%;
+}
+
+.modelDetails {
+    float: left;
+}
+
+.heading {
+    color: #B2B1B9;
+    padding-bottom: 5px;
+    width: 30%;
+  
+}
+
+.modelNumber {
+    color: #FAD586;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+.solarPanel {
+    background-color: #1C1427;
+    box-shadow: inset 2px 2px 5px #2B2B2B;
+    border-radius: 15px;
+    width: 45%;
+    height: 80%;
+    float: right;
+}
+
+/* Display Section */
+input {
+    background-color: #B2B1B9;
+    box-shadow: inset 2px 2px 5px #394867;
+    width: 100%;
+    height: 12%;
+    font-size: 2.2em;
+    border-radius: 15px;
+    text-align: end;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Keypad Section */
+.buttonPanel {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+    height: 65%;
+}
+
+button {
+    width: 80%;
+    height: 80%;
+    font-size: 1.75em;
+    margin: auto;
+    border: none;
+    box-shadow: 2px 2px 2px #B4A5A5,
+    5px 2px 3px #3A6351;
+    border-radius: 20px;
+    background-color: #B2B1B9;
+}
+
+button:hover {
+    background:linear-gradient(180deg,#F1D18A, #4C6F7B) ;
+    transform: translateY(-2px);
+}
+
+ .zeroBtn {
+    grid-column: span 2;
+    border-radius: 20px;
+    width: 85%;
+}
+
+
+/* Footer Section */
+footer {
+  position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: dimgray;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    padding-bottom: 5px;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 1025px) {
+    .calculator {
+      width: 60%;
+      height: 70%;
+    }
+
+    .modelDetails {
+        width: 30%;
+    }
+
+    .solarPanel {
+        width: 30%;
+        height: 60%;
+    }
+
+  }
+
